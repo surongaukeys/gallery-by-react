@@ -26,23 +26,11 @@ function getDefaultModules() {
     loaders: [
       {
         test: /\.css$/,
-        loader: 'style-loader!css-loader!autoprefixer-loader?{browers:["last 2 version","firfox 15"]}'
-      },
-      {
-        test: /\.sass/,
-        loader: 'style-loader!css-loader!autoprefixer-loader?{browers:["last 2 version","firfox 15"]}!sass-loader?outputStyle=expanded'
+        loader: 'style-loader!css-loader!autoprefixer-loader?{browsers:["last 2 version","Firefox 15"]}'
       },
       {
         test: /\.scss/,
-        loader: 'style-loader!css-loader!autoprefixer-loader?{browers:["last 2 version","firfox 15"]}!sass-loader?outputStyle=expanded'
-      },
-      {
-        test: /\.less/,
-        loader: 'style-loader!css-loader!autoprefixer-loader?{browers:["last 2 version","firfox 15"]}!less-loader'
-      },
-      {
-        test: /\.styl/,
-        loader: 'style-loader!css-loader!stylus-loader'
+        loader: 'style-loader!css-loader!autoprefixer-loader?{browsers:["last 2 version","Firefox 15"]}!sass-loader?outputStyle=expanded'
       },{
         test: /\.json$/,
         loader: 'json-loader'
