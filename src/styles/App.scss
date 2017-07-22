@@ -32,6 +32,33 @@ html{
   overflow: hidden;
 
   background-color: #ddd;
+
+  @at-root{
+    .img-figure{
+      position: absolute;
+      
+      width: 320px;
+      height: 360px;
+      margin: 0;
+      padding: 40px;
+     
+      background-color: #fff;
+
+      box-sizing: border-box;
+
+    }
+
+    figcation{
+      text-align: center;
+
+      .img-title{
+        margin: 20px;
+
+        color: #a7a0a2;
+        font-size: 16px;
+      }
+    }
+  }
 }
 /* img --end */
 
